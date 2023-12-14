@@ -54,6 +54,7 @@ def image_stitching(image1_path, image2_path):
     result[:, 0:image1.shape[1]] = image1
 
     # Display result
+    cv2.imwrite('horizontal_result.jpg', result)
     cv2.imshow("Result", result)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
